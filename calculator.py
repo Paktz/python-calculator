@@ -46,15 +46,13 @@ class Calculator:
         
         abs_a = a if a >= 0 else self.subtract(0, a)
         abs_b = b if b >= 0 else self.subtract(0, b)
-        
-        # Subtract b from a until we can't anymore
+
         while abs_a >= abs_b:
             abs_a = self.subtract(abs_a, abs_b)
             
-        # Apply the sign of the original dividend
+        
         return abs_a if a >= 0 else self.subtract(0, abs_a)
 
-# Example usage:
 if __name__ == "__main__":
     calc = Calculator()
     print("This is a simple calculator class!")
