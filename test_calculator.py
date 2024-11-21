@@ -31,7 +31,6 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(0,0),0)
 
     #divide cases
-    # I assume that we
     def test_divide_positive(self):
         self.assertEqual(self.calc.divide(10, 2), 5)
         self.assertEqual(self.calc.divide(8, 2), 4)
